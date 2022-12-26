@@ -1,21 +1,30 @@
 # impayd
-**impayd** is a blockchain built using Cosmos SDK and Tendermint and created with [Ignite CLI](https://ignite.com/cli).
+**impayd** is a distributed blockchain for financial services built using Cosmos SDK and Tendermint and created with [Starport](https://starport.com). It delivers benefits to the financial services participants and developers via its open-source platform based on Tnedermint consensus engine. 
+
+Test commit
+
+# Why impayd?
+
+It's a blockchain based on microservice application that connects Cosmos-powered blockchains. The impayd-client runs on pure Cosmos Modules coded in Golang. It establishes a connection to a blockchain endpoint and executes instructions on that blockchain. Because the impayd-client is modular, the blockchain can be readily modified.
+
+To receive requests, the impayd-client establishes a web server.
+Startport is a code-based tool used for regulating Cosmos ecosystem. 
 
 ## Get started
 
 ```
-ignite chain serve
+starport chain serve
 ```
 
 `serve` command installs dependencies, builds, initializes, and starts your blockchain in development.
 
 ### Configure
 
-Your blockchain in development can be configured with `config.yml`. To learn more, see the [Ignite CLI docs](https://docs.ignite.com).
+Your blockchain in development can be configured with `config.yml`. To learn more, see the [Starport docs](https://docs.starport.com).
 
 ### Web Frontend
 
-Ignite CLI has scaffolded a Vue.js-based web app in the `vue` directory. Run the following commands to install dependencies and start the app:
+Starport has scaffolded a Vue.js-based web app in the `vue` directory. Run the following commands to install dependencies and start the app:
 
 ```
 cd vue
@@ -23,7 +32,7 @@ npm install
 npm run serve
 ```
 
-The frontend app is built using the `@starport/vue` and `@starport/vuex` packages. For details, see the [monorepo for Ignite front-end development](https://github.com/ignite/web).
+The frontend app is built using the `@starport/vue` and `@starport/vuex` packages. For details, see the [monorepo for Starport front-end development](https://github.com/tendermint/vue).
 
 ## Release
 To release a new version of your blockchain, create and push a new tag with `v` prefix. A new draft release with the configured targets will be created.
@@ -39,14 +48,14 @@ After a draft release is created, make your final changes from the release page 
 To install the latest version of your blockchain node's binary, execute the following command on your machine:
 
 ```
-curl https://get.ignite.com/impay-money/impayd@latest! | sudo bash
+curl https://get.starport.com/impay-money/impayd@latest! | sudo bash
 ```
-`impay-money/impayd` should match the `username` and `repo_name` of the Github repository to which the source code was pushed. Learn more about [the install process](https://github.com/allinbits/starport-installer).
+
 
 ## Learn more
 
-- [Ignite CLI](https://ignite.com/cli)
-- [Tutorials](https://docs.ignite.com/guide)
-- [Ignite CLI docs](https://docs.ignite.com)
+- [Starport](https://starport.com)
+- [Tutorials](https://docs.starport.com/guide)
+- [Starport docs](https://docs.starport.com)
 - [Cosmos SDK docs](https://docs.cosmos.network)
-- [Developer Chat](https://discord.gg/ignite)
+- [Developer Chat](https://discord.gg/H6wGTY8sxw)
